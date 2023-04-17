@@ -1,0 +1,5 @@
+sentence-transformers
+flair
+datasets
+accelerate
+flair
