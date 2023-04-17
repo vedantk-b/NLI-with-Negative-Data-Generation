@@ -24,15 +24,15 @@ Baseline Approach:
 -	As previously mentioned, I used transformer based similarity matching as a baseline. I took these two steps in all the baseline models:
     - Use a sentence transformer model to convert the given sentences into embeddings.
     - Use cosine similarity with a threshold to determine whether the reason is the correct explanation for the text.
-	Sentence Transformer : “multi-qa-mpnet-base-dot-v1” :
+-- Sentence Transformer : “multi-qa-mpnet-base-dot-v1” :
 <img src="pr1" alt="Image Title" width="300" height="200">
 
  
-	Sentence Transformer : “multi-qa-mpnet-base-dot-v1” :
+-- Sentence Transformer : “multi-qa-mpnet-base-dot-v1” :
 <img src="pr2" alt="Image Title" width="300" height="200">
 
 
-	Sentence Transformer: “all-mpnet-base-v2”:
+-- Sentence Transformer: “all-mpnet-base-v2”:
 <img src="pr3" alt="Image Title" width="300" height="200">
 
 
