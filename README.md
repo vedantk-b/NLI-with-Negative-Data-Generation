@@ -9,12 +9,12 @@
  
 -	Here, as it can be seen, both text and reason are not properly formed sentences, but rather more informal phrases in nature. 
 -	The distribution of length of strings in text is shown by the following histogram:
--	<img src="hist1" alt="Image Title" width="300" height="200">
+-	<img src="hist1.png" alt="Image Title" width="300" height="200">
 
  
 -	The mean length of a string in text is 59, and the plot seems to be skewed towards the left. The maximum length of a string in the text column is 310, while the minimum length is 13.
 -	The distribution of length of strings in reason is shown by the following histogram:
--	<img src="hist2" alt="Image Title" width="300" height="200">
+-	<img src="hist2.png" alt="Image Title" width="300" height="200">
 
  
 -	The mean length of a string in reason is 30, and the plot for this is also skewed leftward, although not as much as that for text. The maximum length of a string in the text column is 83, while the minimum length is 11.
@@ -24,16 +24,16 @@ Baseline Approach:
 -	As previously mentioned, I used transformer based similarity matching as a baseline. I took these two steps in all the baseline models:
     - Use a sentence transformer model to convert the given sentences into embeddings.
     - Use cosine similarity with a threshold to determine whether the reason is the correct explanation for the text.
--- Sentence Transformer : “multi-qa-mpnet-base-dot-v1” :
-<img src="pr1" alt="Image Title" width="300" height="200">
+- Sentence Transformer : “multi-qa-mpnet-base-dot-v1” :
+<img src="pr1.png" alt="Image Title" width="300" height="200">
 
  
--- Sentence Transformer : “multi-qa-mpnet-base-dot-v1” :
-<img src="pr2" alt="Image Title" width="300" height="200">
+- Sentence Transformer : “multi-qa-mpnet-base-dot-v1” :
+<img src="pr2.png" alt="Image Title" width="300" height="200">
 
 
--- Sentence Transformer: “all-mpnet-base-v2”:
-<img src="pr3" alt="Image Title" width="300" height="200">
+- Sentence Transformer: “all-mpnet-base-v2”:
+<img src="pr3.png" alt="Image Title" width="300" height="200">
 
 
 
@@ -63,7 +63,7 @@ o	With training only on the given, the given data, the results of this model wer
 o	2nd Model Used: ynie/roberta-large-snli_mnli_fever_anli_R1_R2_R3-nli
 o	I used this pretrained roberta model on the SNLI Dataset and finetuned it on the given dataset.
 
-<img src="pr4" alt="Image Title" width="300" height="200">
+<img src="pr4.png" alt="Image Title" width="300" height="200">
 
   
 o	Clearly, The Roberta Model Outperforms all the other models in all the metrics.
